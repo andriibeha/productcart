@@ -1,0 +1,26 @@
+.footer {
+  padding: 1.5rem 2rem 0 2rem;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  &__img {
+    width: 36px;
+    height: auto;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 0.83rem;
+    line-height: 14.2px;
+    letter-spacing: 0.7px;
+  }
+}

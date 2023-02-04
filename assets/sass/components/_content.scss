@@ -1,0 +1,115 @@
+@use "../utils/variables";
+
+.second-title {
+  font-size: 1.4rem;
+  color: variables.$black;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  line-height: 25.2px;
+
+  margin-right: 1rem;
+}
+
+.style__input {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  position: relative;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  border: 1px solid gray;
+  padding: 9px 16px;
+
+  margin: 1rem 0;
+}
+
+.upper-title {
+  margin-top: 1rem;
+
+  @media (min-width: 750px) {
+    margin-top: 0;
+  }
+}
+
+.title {
+  color: variables.$black;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.06rem;
+
+  margin-bottom: 1rem;
+
+  @media (min-width: 750px) {
+    font-size: 4rem;
+    letter-spacing: 0.6px;
+    line-height: 52px;
+  }
+}
+
+.star-list {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 1rem;
+}
+
+.star-list svg {
+  fill: rgb(255, 206, 7);
+}
+
+.star__item {
+  font-size: 19px;
+}
+
+.star__item__last__star {
+  margin-right: 5px;
+}
+
+.star__item__reviews {
+  margin-left: 5px;
+}
+
+.price-list {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 1rem;
+}
+
+.price-item {
+  margin-right: 1rem;
+}
+
+.price-item:last-child {
+  margin-right: 0;
+}
+
+.price__cross {
+  font-size: 1.3rem;
+  text-decoration: line-through;
+
+  @media (min-width: 750px) {
+    font-size: 1.6rem;
+  }
+}
+
+.price__current {
+  font-size: 1.6rem;
+
+  @media (min-width: 750px) {
+    font-size: 1.8rem;
+  }
+}
+
+.price__figure {
+  font-size: 1.2rem;
+  padding: 0.6rem 1.3rem;
+  color: variables.$white;
+
+  background-color: #334fb4;
+  border-radius: 4rem;
+
+  @media (min-width: 750px) {
+    line-height: 1.2rem;
+  }
+}

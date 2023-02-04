@@ -1,0 +1,15 @@
+@use "../utils/variables";
+
+.special {
+  text-align: center;
+  padding: 1rem 2rem;
+
+  background-color: variables.$black;
+
+  &__text {
+    letter-spacing: 0.1rem;
+    font-size: 1.2rem;
+
+    color: variables.$white;
+  }
+}

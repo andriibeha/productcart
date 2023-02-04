@@ -1,0 +1,43 @@
+.thumbnails {
+  display: flex;
+  margin: 1rem auto;
+  padding: 0;
+  justify-content: center;
+}
+
+.thumbnail {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  list-style: none;
+  margin: 0 0.2rem;
+  cursor: pointer;
+
+  opacity: 0.3;
+}
+
+.thumbnail.is-active {
+  opacity: 1;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+#main-carousel {
+  @media (min-width: 750px) {
+    position: sticky;
+    top: 0;
+  }
+}
+
+#thumbnails {
+  @media (min-width: 750px) {
+    display: none;
+  }
+}
+
+.splide__list li img {
+  width: 100%;
+}

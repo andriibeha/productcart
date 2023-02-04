@@ -1,0 +1,108 @@
+@use "../utils/variables";
+
+.pc__container {
+  display: none;
+
+  @media (min-width: 990px) {
+    display: block;
+  }
+}
+
+.pc__nav__link {
+  margin-right: 2rem;
+
+  font-size: 1.4rem;
+  line-height: 18.2px;
+  font-weight: 400;
+
+  color: rgba(18, 18, 18, 0.75);
+}
+
+.pc__nav__link:last-child {
+  margin-right: 0;
+}
+
+.pc__nav__link:hover,
+.pc__nav__link:focus {
+  transition: 0.2s;
+  color: rgb(18, 18, 18);
+}
+
+.pc__only {
+  display: none;
+
+  @media (min-width: 990px) {
+    display: block;
+  }
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 500;
+  top: 4.5rem;
+  left: 0;
+  transition: transform 0.1s linear;
+  background-color: variables.$white;
+
+  padding: 1rem 1.5rem;
+
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+
+  @media (min-width: 990px) {
+    padding: 2rem 5rem;
+  }
+
+  &__hide {
+    transform: translateY(-98px);
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  &__title:hover,
+  &__title:focus {
+    color: variables.$black;
+    transition-duration: 250ms;
+  }
+
+  &__icons-list {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  &__icons-item {
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+
+    width: 44px;
+    height: 44px;
+
+    margin-right: 0.5rem;
+  }
+
+  &__icons-item:last-child {
+    margin-right: 0;
+  }
+
+  &__icons-item:hover,
+  &__icons-item:focus {
+    transition-duration: 250ms;
+    scale: 1.1;
+  }
+
+  &__icons__svg {
+    fill: variables.$black;
+  }
+}
+
+.header__top--zero {
+  top: 0;
+}

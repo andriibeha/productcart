@@ -1,0 +1,45 @@
+@use "../utils/variables";
+
+.style__conatiner {
+  margin-bottom: 2rem;
+}
+
+.style__conatiner__text--flex {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 1rem;
+}
+
+.style__description {
+  font-size: 1.4rem;
+  color: variables.$black;
+}
+
+.style__button-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.style__button-item {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.style__button-button {
+  font-size: 1.6rem;
+  color: variables.$black;
+
+  padding: 1rem 1.6rem;
+  border: 1px solid variables.$black;
+
+  border-radius: 0.5rem;
+  background-color: inherit;
+
+  cursor: pointer;
+}
+
+.style__button-button--active {
+  background-color: variables.$black;
+  color: variables.$white;
+}

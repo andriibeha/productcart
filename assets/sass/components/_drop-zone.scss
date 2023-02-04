@@ -1,0 +1,51 @@
+@use "../utils/variables";
+
+.drop__zone__text {
+  font-size: 1.2rem;
+  color: variables.$black;
+  letter-spacing: 0.6px;
+  line-height: 21.6px;
+}
+
+#upload-container {
+  margin-top: 1rem;
+  position: relative;
+}
+
+.drop__zone__icon {
+  position: absolute;
+  left: 17px;
+  top: 17px;
+  z-index: 1;
+}
+
+.custom-file-input {
+  color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: "";
+  color: black;
+  display: inline-block;
+  border: 1px dashed black;
+  border-radius: 3px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  z-index: 10;
+}
+.custom-file-input:hover::before {
+  border-color: black;
+}
+.custom-file-input:active {
+  outline: 0;
+}
+.custom-file-input:active::before {
+  background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9);
+}

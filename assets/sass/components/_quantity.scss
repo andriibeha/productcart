@@ -1,0 +1,69 @@
+.style__quantity {
+  &-text {
+    font-size: 1.3rem;
+    letter-spacing: 0.4px;
+    line-height: 19.5px;
+
+    margin-bottom: 6px;
+  }
+}
+
+.style__quantity__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  border: 1px solid grey;
+  max-width: 14rem;
+}
+
+.style__quantity__container__button {
+  background-color: inherit;
+  position: relative;
+  border: none;
+  width: 45px;
+  height: 47px;
+  font-size: 1.8rem;
+  color: black;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.style__quantity__container__button__svg {
+  position: relative;
+  width: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.style__quantity__container__text {
+  padding: 0 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.style__add__button {
+  display: block;
+  box-sizing: border-box;
+  background-color: inherit;
+
+  border: 1px solid black;
+
+  font-size: 1.5rem;
+  columns: grey;
+
+  padding: 1rem 4rem;
+
+  width: 100%;
+
+  cursor: pointer;
+}
+
+.style__add__button:hover,
+.style__add__button:focus {
+  border: 2px solid black;
+}

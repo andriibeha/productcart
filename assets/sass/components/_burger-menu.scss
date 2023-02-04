@@ -1,0 +1,137 @@
+@use "../utils/variables";
+
+.burger__menu {
+  @media (min-width: 990px) {
+    display: none;
+  }
+}
+
+.burger__menu__button {
+  position: absolute;
+  top: 1rem;
+  width: 44px;
+  height: 44px;
+  background-color: inherit;
+  z-index: 100;
+
+  cursor: pointer;
+}
+
+.burger__menu__lines,
+.burger__menu__lines:after,
+.burger__menu__lines:before {
+  position: absolute;
+  top: 50%;
+  width: 44px;
+  height: 2px;
+  background-color: variables.$text;
+  z-index: 100;
+}
+
+.burger__menu__lines:before {
+  content: "";
+  top: 1rem;
+}
+
+.burger__menu__lines::after {
+  content: "";
+  top: -1rem;
+}
+
+.burger__menu__active .burger__menu__lines {
+  background-color: transparent;
+}
+
+.burger__menu__active .burger__menu__lines::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.burger__menu__active .burger__menu__lines::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.burger__menu__nav {
+  position: fixed;
+  width: 279px;
+  z-index: 100;
+  display: flex;
+  flex-flow: column;
+  justify-content: stretch;
+  height: 100%;
+  background-color: variables.$white;
+  overflow-y: auto;
+  left: -100%;
+  top: 10.9rem;
+}
+
+.burger__menu__nav__top {
+  top: 10%;
+}
+
+.burger__menu__active .burger__menu__nav {
+  left: 0;
+}
+
+.burger__menu__link {
+  padding: 1.1rem 3.2rem;
+  cursor: pointer;
+
+  color: variables.$black;
+
+  font-size: 1.8rem;
+
+  margin-bottom: 0.2rem;
+}
+
+.burger__menu__link:last-child {
+  margin-bottom: 0;
+}
+
+.burger__menu__link:hover,
+.burger__menu__link:focus {
+  background-color: variables.$burgerMenuHove;
+}
+
+.burger__menu__overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5;
+}
+
+.burger__menu__active .burger__menu__overlay {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.burger__menu__login {
+  padding: 3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  background-color: variables.$burgerMenuHove;
+}
+
+.burger__menu__login__icon {
+  fill: variables.$black;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 1rem;
+}
+
+.burger__menu__login:hover .burger__menu__login__icon,
+.burger__menu__login:focus .burger__menu__login__icon {
+  scale: 1.1;
+}
+
+.burger__menu__login__text {
+  color: variables.$black;
+
+  font-size: 1.8rem;
+}

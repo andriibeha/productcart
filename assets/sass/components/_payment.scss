@@ -1,0 +1,22 @@
+.style__payment {
+  font-size: 1.5rem;
+  line-height: 27px;
+}
+
+.style__payment__img {
+  width: 48px;
+  height: 30px;
+}
+
+.style__payment__list {
+  display: flex;
+  align-items: center;
+}
+
+.style__payment__item {
+  margin-right: 1rem;
+}
+
+.style__payment__item:last-child {
+  margin-right: 0;
+}
